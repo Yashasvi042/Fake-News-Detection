@@ -40,6 +40,7 @@ print("Accuracy:" , accuracy_score(y_test,prediction))
 os.makedirs("model", exist_ok=True)
 
 pickle.dump(model,open("model/model.pkl","wb"))
+pickle.dump(vectorizer, open("model/vectorizer.pkl", "wb"))
 
 
 
